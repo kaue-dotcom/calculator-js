@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator JS</title>
+   <link rel="stylesheet" href="sass/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <div class="calculator">
+      <div class="input" id="input"></div>
+      <div class="buttons">
+         <div class="operators">
+            <div>+</div>
+            <div>-</div>
+            <div>*</div>
+            <div>/</div>
+         </div>
+         <div class="leftPanel">
+            <div class="numbers">
+               <div>7</div>
+               <div>8</div>
+               <div>9</div>
+            </div>
+            <div class="numbers">
+               <div>4</div>
+               <div>5</div>
+               <div>6</div>
+            </div>
+            <div class="numbers">
+               <div>1</div>
+               <div>2</div>
+               <div>3</div>
+            </div>
+            <div class="numbers">
+               <div>0</div>
+               <div>.</div>
+               <div id="clear">C</div>
+            </div>
+         </div>
+         <div class="remove" id="remove" onclick="apagar()"><i class="fa-solid fa-delete-left"></i></div>
+         <div class="equal" id="result">=</div>
+      </div>
+   </div>
+
+   <div style="display: flex; justify-content: center;">
+      <div class="alert" id="message" style="display: none;">
+         Digite um número para concuir a operação.
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</body>
+
+</html>
